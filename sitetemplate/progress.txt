@@ -1,0 +1,23 @@
+set up urls for the app and the project
+configure the database for sqlposgres
+set up the models and make migrations
+set up the views for the index function
+make the static files functional
+creat a basic form function for subscription which includes name and e-mail
+creat five pages including the 'about us', contact, 'services',
+login and sign in,
+create a base template to work across all the pages
+when everythin is functional push the github repository 
+push to heroku 
+
+
+
+
+
+
+
+so far so good 
+we have been able connect to postgresql 
+the static files are taking care 
+the base template is fix we can dynamically and uniquly
+render page contents

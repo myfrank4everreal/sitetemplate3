@@ -1,0 +1,22 @@
+{% load static %}
+
+<a href="{% url 'about' %}"><button type="button">about</button></a>
+<a href="{% url 'index' %}"><button type="button">index</button></a>
+
+
+
+this is the base template
+
+this is the base template
+
+   {% for items in myobject %}
+<ul>
+    <li>{{ items.name }}</li>
+    <li>{{ items.amount }}</li>
+    <li><img src="{{ items.img.url }}" alt="not found"></li>
+
+
+
+</ul>
+
+{% endfor %}
