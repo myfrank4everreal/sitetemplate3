@@ -1,1 +1,1 @@
-web: gunicorn affiliate.wsgi
+web: gunicorn sitetemplate.wsgi
