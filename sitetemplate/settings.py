@@ -38,6 +38,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'myapp',
+    'blog',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -91,6 +92,16 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
+# this is for the heroku postgresql database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'dfrco3g6rf2umv',
+#         'USER': 'alsbrskoynwsub',
+#         'PASSWORD': 'ccf3dbaa0730b183989c34bad2775523c795a3cbfe50f8e66469fa7c9765bc97',
+#         'HOST': 'ec2-50-19-254-63.compute-1.amazonaws.com'
+#     }
+# }
 
 # connecting to heroku database postgresql to gain access locally
 db_from_env = dj_database_url.config()

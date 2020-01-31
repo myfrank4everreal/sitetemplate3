@@ -21,3 +21,7 @@ we have been able connect to postgresql
 the static files are taking care 
 the base template is fix we can dynamically and uniquly
 render page contents
+
+
+
+my sitetemplate is now fully functional for remote db7
