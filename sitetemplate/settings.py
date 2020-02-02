@@ -39,6 +39,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'myapp',
     'blog',
+    'portfolio',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,7 +65,12 @@ ROOT_URLCONF = 'sitetemplate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'sitetemplate/templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR,'sitetemplate/templates'),
+            os.path.join(BASE_DIR,'blog/templates/blog'),
+            os.path.join(BASE_DIR,'portfolio/templates/portfolio'),
+                        
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -146,7 +152,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-STATICFILES_DIRS =[ os.path.join(BASE_DIR, 'static'),
+STATICFILES_DIRS =[ os.path.join(BASE_DIR, 'sitetemplate/static'),
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

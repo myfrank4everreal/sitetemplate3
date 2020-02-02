@@ -1,3 +1,9 @@
+
+VERY IMPORTANT NOTE:
+make sure that you refrence the context variable not 
+the variable in the forloop  when working on
+object id 
+
 set up urls for the app and the project
 configure the database for sqlposgres
 set up the models and make migrations
@@ -18,10 +24,51 @@ push to heroku
 
 so far so good 
 we have been able connect to postgresql 
-the static files are taking care 
-the base template is fix we can dynamically and uniquly
+the static files are taking care of 
+the base template is fixed we can dynamically and uniquly
 render page contents
 
 
 
-my sitetemplate is now fully functional for remote db7
+my sitetemplate is now fully functional for postgresql
+
+i added a new blog app for testing purposes and it functioned 
+well on heroku . 
+so now i will create a new app heroku application for blog 
+and i will leave this particular project app for as a template so
+that any subsequent development that i will do will not require
+going through the setup process.
+so when ever i need this i can clone it and use it for my 
+future developments.
+Though i still have it on github i can also clone it from there
+
+
+NOTE: DO NOT SAVE MORE THAN ONE URL AT THE SAME TIME IT CAUSES ERROR DUE TO 
+CIRCULAR IMPORT. TAKE IT ONE TIME AT A TIME WHEN YOU SAVE ONE MAKE SURE TO 
+RUN SERVER THAT WAY YOU WILL NOT GET ANY ERROR.
+
+I can now extend from both the project template and the blog template
+
+
+i had a problem with a loading the static (not found)
+i resolved that by providing the full path for django to search 
+through to find the location of static files in the.
+STATICFILES_DIRS =[ os.path.join(BASE_DIR, 'sitetemplate/static'),
+in the settings.py file:                          |
+                                                  v
+                                        this is the path 
+                                        (this gave me some seriouse problem to figure out)
+
+
+
+
+
+
+i am making use of two base html one is named blogbase and it is inside the the blog app and takes care of all the pages associated wiht 
+the blog while,
+the other one is named base.html and it is inside the project directory this i am using to set up the portfolio app and pages related to the 
+portfolio.
+right now i have brought in the boostrap template for called modearn business which is currently serving as the base.html template.
+from this i will setup the portfolio pages.
+
+at this stage i am making a commit and i will push to gith

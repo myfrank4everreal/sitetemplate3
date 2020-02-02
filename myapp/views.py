@@ -1,14 +1,14 @@
 from django.shortcuts import render
 from .models import modeltemp
 
-def index(request):
+def demoindex(request):
     myobject = modeltemp.objects.all()
     context = {'myobject':myobject}
-    return render(request, 'myapp/index.html', context)
+    return render(request, 'myapp/demoindex.html', context)
 
 
 
 # this is for the about page
-def about(request):
+def demoabout(request):
     context = {}
-    return render(request, 'myapp/about.html', context)
+    return render(request, 'myapp/demoabout.html', context)
