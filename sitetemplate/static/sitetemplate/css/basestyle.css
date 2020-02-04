@@ -10,3 +10,29 @@
 
 } */
 
+.row-controler{
+    margin-top: 60px;
+}
+
+.mycard{
+    border: 0px solid rgba(158, 49, 49, 0.125) !important;
+}
+
+/* .mycontainer{
+    width: px !important;
+} */
+
+.button-control{
+    margin: 60px;
+    width: auto !important;
+}
+.mybtn{
+    background-color: aquamarine;
+    color: black;
+    width: auto !important;
+}
+
+.image-resize{
+    width: auto;
+    height: 200px;
+}
